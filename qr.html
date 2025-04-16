@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            max-width: 400px;
+            width: 100%;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        canvas {
+            margin-top: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #e74c3c;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background: #c0392b;
+        }
+
+        #cash-button {
+            width: 100%;
+            padding: 10px;
+            background: #4caf50; /* Green color for cash */
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        #cash-button:hover {
+            background: #388e3c;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Payment</h1>
+        <canvas id="qr-code"></canvas>
+        <button id="open-link" style="display: none;">Pay through UPI</button>
+        <button id="cash-button">Pay with Cash</button>
+    </div>
+
+    <script>
+        const baseUpiLink = "upi://pay?pa=mradulraghuwanshi-3@okaxis&pn=Mradul%20Raghuwanshi&am=0.00&cu=INR&aid=uGICAgMDYrtfZGw";
+
+        const qrCanvas = document.getElementById('qr-code');
+        const openLinkButton = document.getElementById('open-link');
+
+        // Function to get query parameters from the URL
+        function getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+
+        // Get the total amount from the query parameter
+        const totalAmount = getQueryParam('total');
+
+        if (totalAmount && !isNaN(totalAmount)) {
+            const updatedLink = baseUpiLink.replace("am=0.00", `am=${totalAmount}`);
+
+            // Generate the QR code
+            const qr = new QRious({
+                element: qrCanvas,
+                size: 200,
+                value: updatedLink,
+            });
+
+            // Show the "Open Payment Link" button
+            openLinkButton.style.display = 'inline-block';
+            openLinkButton.onclick = () => window.open(updatedLink, '_blank');
+        } else {
+            alert('No valid total amount provided. Please go back and try again.');
+        }
+    </script>
+</body>
+</html>

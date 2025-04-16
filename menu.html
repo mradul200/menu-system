@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>My Cart</title>
+    <link rel="stylesheet" href="menu.css">
+    <script src="menu.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="name">Restro name</h1>
+            <span><button>Cart</button></span>
+            
+        </header>
+        <div class="search-container">
+            <input type="text" id="search-bar" placeholder="Search for dishes...">
+            <button id="search-button">Search</button>
+        </div>
+
+        <div class="scrollable-content">
+            <h3>Chinese</h3>
+            <div class="cart-item" data-price="80.00">
+                <img src="49" alt="Chicken Dum Biryani">
+                <div class="details">
+                    <h3>Chicken Freid Rice</h3>
+                    <p>&#8377 80.00</p>
+                </div>
+                <div class="actions">
+                    <button class="quantity-decrease">-</button>
+                    <span class="quantity">1</span>
+                    <button class="quantity-increase">+</button>
+                    <button class="delete-btn">&#128465;</button>
+                </div>
+            </div>
+
+            <div class="cart-item" data-price="80.00">
+                <img src="fish.png" alt="Fish Dum Biryani">
+                <div class="details">
+                    <h3>Chicken Noodles</h3>
+                    <p>&#8377 80.00</p>
+                </div>
+                <div class="actions">
+                    <button class="quantity-decrease">-</button>
+                    <span class="quantity">1</span>
+                    <button class="quantity-increase">+</button>
+                    <button class="delete-btn">&#128465;</button>
+                </div>
+            </div>
+
+            <div class="cart-item" data-price="100.00">
+                <img src="mutton.png" alt="Mutton Dum Biryani">
+                <div class="details">
+                    <h3>Mixed Fried Rice</h3>
+                    <p>&#8377 100.00</p>
+                </div>
+                <div class="actions">
+                    <button class="quantity-decrease">-</button>
+                    <span class="quantity">1</span>
+                    <button class="quantity-increase">+</button>
+                    <button class="delete-btn">&#128465;</button>
+                </div>
+            </div>
+
+            <div class="cart-item" data-price="100.00">
+                <img src="prawn.png" alt="Prawn Dum Biryani">
+                <div class="details">
+                    <h3>Fried Rice Pattaya</h3>
+                    <p>&#8377 100.00</p>
+                </div>
+                <div class="actions">
+                    <button class="quantity-decrease">-</button>
+                    <span class="quantity">1</span>
+                    <button class="quantity-increase">+</button>
+                    <button class="delete-btn">&#128465;</button>
+                </div>
+            </div>
+
+            <div class="cart-item" data-price="">
+                <img src="tandoori.png" alt="Tandoori Chicken Biryani">
+                <div class="details">
+                    <h3>Chicken Manchurian</h3>
+                    <p>&#8377 80.00</p>
+                </div>
+                <div class="actions">
+                    <button class="quantity-decrease">-</button>
+                    <span class="quantity">1</span>
+                    <button class="quantity-increase">+</button>
+                    <button class="delete-btn">&#128465;</button>
+                </div>
+            </div>
+            <div class="cart-item" data-price="100">
+                <img src="prawn.png" alt="Prawn Dum Biryani">
+                <div class="details">
+                    <h3>Chilli Chicken</h3>
+                    <p>&#8377 100.00</p>
+                </div>
+                <div class="actions">
+                    <button class="quantity-decrease">-</button>
+                    <span class="quantity">1</span>
+                    <button class="quantity-increase">+</button>
+                    <button class="delete-btn">&#128465;</button>
+                </div>
+            </div>
+            <div class="cart-item" data-price="90">
+                <img src="prawn.png" alt="Prawn Dum Biryani">
+                <div class="details">
+                    <h3>Chicken 65</h3>
+                    <p>&#8377 90.00</p>
+                </div>
+                <div class="actions">
+                    <button class="quantity-decrease">-</button>
+                    <span class="quantity">1</span>
+                    <button class="quantity-increase">+</button>
+                    <button class="delete-btn">&#128465;</button>
+                </div>
+            </div>
+            <h3>Paratha</h3>
+            <div class="cart-item" data-price="12">
+                <img src="prawn.png" alt="Prawn Dum Biryani">
+                <div class="details">
+                    <h3>Roti</h3>
+                    <p>&#8377 12.00</p>
+                </div>
+                <div class="actions">
+                    <button class="quantity-decrease">-</button>
+                    <span class="quantity">1</span>
+                    <button class="quantity-increase">+</button>
+                    <button class="delete-btn">&#128465;</button>
+                </div>
+            </div>
+            <div class="cart-item" data-price="20">
+                <img src="prawn.png" alt="Prawn Dum Biryani">
+                <div class="details">
+                    <h3>Plain Paratha</h3>
+                    <p>&#8377 20.00</p>
+                </div>
+                <div class="actions">
+                    <button class="quantity-decrease">-</button>
+                    <span class="quantity">1</span>
+                    <button class="quantity-increase">+</button>
+                    <button class="delete-btn">&#128465;</button>
+                </div>
+            </div>
+            <div class="cart-item" data-price="30">
+                <img src="prawn.png" alt="Prawn Dum Biryani">
+                <div class="details">
+                    <h3>Egg paratha</h3>
+                    <p>&#8377 30.00</p>
+                </div>
+                <div class="actions">
+                    <button class="quantity-decrease">-</button>
+                    <span class="quantity">1</span>
+                    <button class="quantity-increase">+</button>
+                    <button class="delete-btn">&#128465;</button>
+                </div>
+            </div>
+
+            <div class="cart-item" data-price="120">
+                <img src="prawn.png" alt="Prawn Dum Biryani">
+                <div class="details">
+                    <h3>Khilli Paratha</h3>
+                    <p>&#8377 120.00</p>
+                </div>
+                <div class="actions">
+                    <button class="quantity-decrease">-</button>
+                    <span class="quantity">1</span>
+                    <button class="quantity-increase">+</button>
+                    <button class="delete-btn">&#128465;</button>
+                </div>
+            </div>
+            <div class="cart-item" data-price="80">
+                <img src="prawn.png" alt="Prawn Dum Biryani">
+                <div class="details">
+                    <h3>Chicken kotho</h3>
+                    <p>&#8377 80.00</p>
+                </div>
+                <div class="actions">
+                    <button class="quantity-decrease">-</button>
+                    <span class="quantity">1</span>
+                    <button class="quantity-increase">+</button>
+                    <button class="delete-btn">&#128465;</button>
+                </div>
+            </div>
+            <div class="cart-item" data-price="40">
+                <img src="prawn.png" alt="Prawn Dum Biryani">
+                <div class="details">
+                    <h3>Cheese paratha</h3>
+                    <p>&#8377 40.00</p>
+                </div>
+                <div class="actions">
+                    <button class="quantity-decrease">-</button>
+                    <span class="quantity">1</span>
+                    <button class="quantity-increase">+</button>
+                    <button class="delete-btn">&#128465;</button>
+                </div>
+            </div>
+            <div class="cart-item" data-price="40">
+                <img src="prawn.png" alt="Prawn Dum Biryani">
+                <div class="details">
+                    <h3>Mini Mortabah</h3>
+                    <p>&#8377 40.00</p>
+                </div>
+                <div class="actions">
+                    <button class="quantity-decrease">-</button>
+                    <span class="quantity">1</span>
+                    <button class="quantity-increase">+</button>
+                    <button class="delete-btn">&#128465;</button>
+                </div>
+            </div>
+            <h3>Grill</h3>
+            <div class="cart-item" data-price="100">
+                <img src="prawn.png" alt="Prawn Dum Biryani">
+                <div class="details">
+                    <h3>Quarter</h3>
+                    <p>&#8377 100.00</p>
+                </div>
+                <div class="actions">
+                    <button class="quantity-decrease">-</button>
+                    <span class="quantity">1</span>
+                    <button class="quantity-increase">+</button>
+                    <button class="delete-btn">&#128465;</button>
+                </div>
+            </div>
+            <div class="cart-item" data-price="180">
+                <img src="prawn.png" alt="Prawn Dum Biryani">
+                <div class="details">
+                    <h3>Half</h3>
+                    <p>&#8377 180.00</p>
+                </div>
+                <div class="actions">
+                    <button class="quantity-decrease">-</button>
+                    <span class="quantity">1</span>
+                    <button class="quantity-increase">+</button>
+                    <button class="delete-btn">&#128465;</button>
+                </div>
+            </div>
+            <div class="cart-item" data-price="380">
+                <img src="prawn.png" alt="Prawn Dum Biryani">
+                <div class="details">
+                    <h3>Full</h3>
+                    <p>&#8377 380.00</p>
+                </div>
+                <div class="actions">
+                    <button class="quantity-decrease">-</button>
+                    <span class="quantity">1</span>
+                    <button class="quantity-increase">+</button>
+                    <button class="delete-btn">&#128465;</button>
+                </div>
+            </div>
+            <h3>Maggi</h3>
+            <div class="cart-item" data-price="30">
+                <img src="prawn.png" alt="Prawn Dum Biryani">
+                <div class="details">
+                    <h3>Plain Maggi</h3>
+                    <p>&#8377 30.00</p>
+                </div>
+                <div class="actions">
+                    <button class="quantity-decrease">-</button>
+                    <span class="quantity">1</span>
+                    <button class="quantity-increase">+</button>
+                    <button class="delete-btn">&#128465;</button>
+                </div>
+            </div>
+            <div class="cart-item" data-price="45">
+                <img src="prawn.png" alt="Prawn Dum Biryani">
+                <div class="details">
+                    <h3>Maggi Soap</h3>
+                    <p>&#8377 45.00</p>
+                </div>
+                <div class="actions">
+                    <button class="quantity-decrease">-</button>
+                    <span class="quantity">1</span>
+                    <button class="quantity-increase">+</button>
+                    <button class="delete-btn">&#128465;</button>
+                </div>
+            </div>
+            <div class="cart-item" data-price="50">
+                <img src="prawn.png" alt="Prawn Dum Biryani">
+                <div class="details">
+                    <h3>Maggi Fry</h3>
+                    <p>&#8377 50.00</p>
+                </div>
+                <div class="actions">
+                    <button class="quantity-decrease">-</button>
+                    <span class="quantity">1</span>
+                    <button class="quantity-increase">+</button>
+                    <button class="delete-btn">&#128465;</button>
+                </div>
+            </div>
+            <div class="cart-item" data-price="75">
+                <img src="prawn.png" alt="Prawn Dum Biryani">
+                <div class="details">
+                    <h3>Maggi Veg</h3>
+                    <p>&#8377 75.00</p>
+                </div>
+                <div class="actions">
+                    <button class="quantity-decrease">-</button>
+                    <span class="quantity">1</span>
+                    <button class="quantity-increase">+</button>
+                    <button class="delete-btn">&#128465;</button>
+                </div>
+            </div>
+            <div class="cart-item" data-price="90">
+                <img src="prawn.png" alt="Prawn Dum Biryani">
+                <div class="details">
+                    <h3>Chicken Maggi Fry</h3>
+                    <p>&#8377 90.00</p>
+                </div>
+                <div class="actions">
+                    <button class="quantity-decrease">-</button>
+                    <span class="quantity">1</span>
+                    <button class="quantity-increase">+</button>
+                    <button class="delete-btn">&#128465;</button>
+                </div>
+            </div>
+            <h3>Biryani</h3>
+            <div class="cart-item" data-price="80">
+                <img src="prawn.png" alt="Prawn Dum Biryani">
+                <div class="details">
+                    <h3>Veg Biryani</h3>
+                    <p>&#8377 80.00</p>
+                </div>
+                <div class="actions">
+                    <button class="quantity-decrease">-</button>
+                    <span class="quantity">1</span>
+                    <button class="quantity-increase">+</button>
+                    <button class="delete-btn">&#128465;</button>
+                </div>
+            </div>
+            <div class="cart-item" data-price="120">
+                <img src="prawn.png" alt="Prawn Dum Biryani">
+                <div class="details">
+                    <h3>Chicken Biryani</h3>
+                    <p>&#8377 120.00</p>
+                </div>
+                <div class="actions">
+                    <button class="quantity-decrease">-</button>
+                    <span class="quantity">1</span>
+                    <button class="quantity-increase">+</button>
+                    <button class="delete-btn">&#128465;</button>
+                </div>
+            </div>
+            <div class="cart-item" data-price="140">
+                <img src="prawn.png" alt="Prawn Dum Biryani">
+                <div class="details">
+                    <h3>Tandoori</h3>
+                    <p>&#8377 140.00</p>
+                </div>
+                <div class="actions">
+                    <button class="quantity-decrease">-</button>
+                    <span class="quantity">1</span>
+                    <button class="quantity-increase">+</button>
+                    <button class="delete-btn">&#128465;</button>
+                </div>
+            </div>
+            <h3>Dosa</h3>
+            <div class="cart-item" data-price="40">
+                <img src="prawn.png" alt="Prawn Dum Biryani">
+                <div class="details">
+                    <h3>Plain Dosa</h3>
+                    <p>&#8377 40.00</p>
+                </div>
+                <div class="actions">
+                    <button class="quantity-decrease">-</button>
+                    <span class="quantity">1</span>
+                    <button class="quantity-increase">+</button>
+                    <button class="delete-btn">&#128465;</button>
+                </div>
+            </div>
+            <div class="cart-item" data-price="50">
+                <img src="prawn.png" alt="Prawn Dum Biryani">
+                <div class="details">
+                    <h3>Onion Dosa</h3>
+                    <p>&#8377 50.00</p>
+                </div>
+                <div class="actions">
+                    <button class="quantity-decrease">-</button>
+                    <span class="quantity">1</span>
+                    <button class="quantity-increase">+</button>
+                    <button class="delete-btn">&#128465;</button>
+                </div>
+            </div>
+            <div class="cart-item" data-price="50">
+                <img src="prawn.png" alt="Prawn Dum Biryani">
+                <div class="details">
+                    <h3>Rava Dosa</h3>
+                    <p>&#8377 50.00</p>
+                </div>
+                <div class="actions">
+                    <button class="quantity-decrease">-</button>
+                    <span class="quantity">1</span>
+                    <button class="quantity-increase">+</button>
+                    <button class="delete-btn">&#128465;</button>
+                </div>
+            </div>
+            <div class="cart-item" data-price="70">
+                <img src="prawn.png" alt="Prawn Dum Biryani">
+                <div class="details">
+                    <h3>Paneer Dosa</h3>
+                    <p>&#8377 70.00</p>
+                </div>
+                <div class="actions">
+                    <button class="quantity-decrease">-</button>
+                    <span class="quantity">1</span>
+                    <button class="quantity-increase">+</button>
+                    <button class="delete-btn">&#128465;</button>
+                </div>
+            </div>
+
+        </div>
+
+        <footer>
+            <div class="total">
+                <span>Total (<span id="item-count">0</span> items)</span>
+                <span>&#8377<span id="total-price">0.00</span></span>
+            </div>
+            <button>place order</button>
+        </footer>
+    </div>
+
+    <div id="table-booking-card" class="hidden">
+        <h2>Table Booking</h2>
+        <div class="table-selection">
+            <!-- Generate table buttons dynamically -->
+            <button class="table-button" data-table="1">1</button>
+            <button class="table-button" data-table="2">2</button>
+            <button class="table-button" data-table="3">3</button>
+            <button class="table-button" data-table="4">4</button>
+            <button class="table-button" data-table="5">5</button>
+            <button class="table-button" data-table="6">6</button>
+            <button class="table-button" data-table="7">7</button>
+            <button class="table-button" data-table="8">8</button>
+            <button class="table-button" data-table="9">9</button>
+            <button class="table-button" data-table="10">10</button>
+        </div>
+        <button id="pay-button">Pay</button>
+    </div>
+
+    <div id="cart-modal" class="hidden">
+        <div class="cart-modal-content">
+            <h2>Selected Items</h2>
+            <ul id="cart-items-list"></ul>
+            <button id="close-cart-button">Close Cart</button>
+        </div>
+    </div>
+
+
+</body>
+</html>
